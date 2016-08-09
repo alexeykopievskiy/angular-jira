@@ -23,6 +23,7 @@ gulp.task('styles', function() {
 var buildStyles = function() {
 
   var injectFiles = gulp.src([
+    path.join(conf.paths.src, '/app/styl/*.styl'),
     path.join(conf.paths.src, '/app/**/*.styl'),
     path.join('!' + conf.paths.src, '/app/index.styl')
   ], { read: false });
